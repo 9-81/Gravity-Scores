@@ -1,0 +1,82 @@
+
+/* WORDPRESS DEFAULTS */
+
+#wpfooter,
+.notice {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0;
+}
+
+.log-entries {
+    width: 14rem;
+    border: 1px solid #dddddd;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    overflow-y: scroll;
+    height: calc(100vh - 10rem);
+}
+
+.log-entry {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: #dfdfdf;
+}
+
+.log-entry:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+.log-entry:hover {
+    background-color: #E9D9B9;
+    font-weight: 900;
+}
+
+.log-entry.active {
+    font-weight: 900;
+    background-color: #B9C9D9;
+    border: 1px solid #B9C9D9;
+    cursor: default;
+}
+
+.log-entry-content {
+    width: calc(100% - 14rem);
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    overflow-x: scroll;
+}
+
+.log-entry-content h1 {
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+
+.log-entry-content h2 {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+.log-entry-content h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.log-entry-content p {
+    font-size: 1rem;
+}
+
+.log-entry-content li {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}

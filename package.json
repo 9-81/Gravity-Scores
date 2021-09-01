@@ -1,0 +1,54 @@
+{
+  "name": "gravityscores",
+  "version": "1.0.0",
+  "description": "WordPress plugin to visualize tests and self-assessment results, for tests made with Gravity Forms.",
+  "keywords": [
+    "WordPress",
+    "Gravity Forms",
+    "Assessement",
+    "Test",
+    "Visualization",
+    "Statistics",
+    "OSA"
+  ],
+  "author": "Jan Dillenberger",
+  "license": "GPL-2.0-only",
+  "contributors": [
+    "Jan Dillenberger <gravityscores@jandillenberger.com>",
+    "Sergei Pachtchenko <gektor@uni-koblenz.com>"
+  ],
+  "main": "gravityscores.php",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.rlp.net:jdillenberger/gravityscores.git"
+  },
+  "scripts": {
+    "build": "webpack -p --env=prod",
+    "dev": "webpack -d --env=dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "axios": "^0.21.1",
+    "d3": "^5.9.7",
+    "d3-queue": "^3.0.7",
+    "d3-tip": "^0.9.1",
+    "marked": "^1.2.5",
+    "vue": "^2.6.12",
+    "vue-wp-list-table": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^2.0.0",
+    "jshint": "^2.10.2",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.2.1",
+    "snazzy": "^8.0.0",
+    "standard": "*",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}

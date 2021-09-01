@@ -1,0 +1,42 @@
+.traffic_light {
+    width: var(--base-width);
+    margin: 0.6em auto;
+
+    --base-width: 3rem;
+}
+
+.traffic_light__hull {
+    display: block;
+
+    border: 2px solid hsl(0, 0%, 50%);
+    border-radius: calc(var(--base-width) * 1/ 4);
+    background-color: hsl(0, 0%, 15%);
+
+    width: calc(var(--base-width) * 8 / 6);
+}
+
+.traffic_light__bulb,
+.traffic_light__bulb--active {
+    transition: background 500ms;
+
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 25%);
+
+    min-width: calc(var(--base-width) * 5 / 6);
+    max-width: calc(var(--base-width) * 5 / 6);
+    min-height: calc(var(--base-width) * 5 / 6);
+    max-height: calc(var(--base-width) * 5 / 6);
+    margin: calc(var(--base-width) / 4) auto;
+}
+
+.red_bulb.traffic_light__bulb--active {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.yellow_bulb.traffic_light__bulb--active {
+    background-color: hsl(51, 100%, 50%);
+}
+
+.green_bulb.traffic_light__bulb--active {
+    background-color: hsl(120, 91%, 34%);
+}

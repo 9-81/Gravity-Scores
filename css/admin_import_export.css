@@ -1,0 +1,60 @@
+/* WORDPRESS DEFAULTS */
+
+#wpfooter,
+.notice {
+    display: none;
+}
+
+
+#wpcontent {
+    padding: 0;
+}
+
+.wrap, .import_export{
+   margin: 0 !important;
+   padding:0
+}
+
+ul.gs-tabs {
+    margin: 0;
+    background-color: #23282d;
+
+}
+
+ul.gs-tabs li {
+    display: inline-block;
+    margin: 0 0.2rem 0 0;
+}
+
+ul.gs-tabs li a {
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+    background-color: #32373c;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    cursor: pointer;
+}
+
+ul.gs-tabs li a.active {
+    background-color: #0073aa;
+    color: white;
+    cursor: default;
+}
+
+div.gs-section {
+    margin-left: 1rem;
+}
+
+div.gs-section * {
+    font-size: 1.2rem;
+}
+
+input, select {
+    margin: 0.5rem 0 1rem 0;
+    display: block;
+}
+
+
+#wpfooter {
+    display: none;
+}

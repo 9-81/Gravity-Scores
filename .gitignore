@@ -1,0 +1,9 @@
+log/*
+!log/.gitkeep
+*.log
+.vagrant/*
+Vagrantfile
+install_vagrant.sh
+node_modules/
+jsdist/*
+*.zip

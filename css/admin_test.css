@@ -1,0 +1,511 @@
+/* ANIMATIONS */
+@keyframes alert {
+    from {
+        background-color: hsl(26, 80%, 80%);
+    }
+
+    to {
+        background-color: #f5f5f5;
+    }
+}
+
+@keyframes success {
+    from {
+        background-color: hsl(106, 80%, 80%);
+    }
+
+    to {
+        background-color: #f5f5f5;
+    }
+}
+
+/* SET FONTSIZE */
+
+:root {
+    font-size: 14px;
+}
+
+@supports (-moz-appearance:none) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+.wrap,
+.wrap p,
+.wrap input,
+.wrap select {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* SET WRAPPER MARGINS */
+
+#wpbody-content,
+#wpcontent {
+    padding: 0 !important;
+}
+
+.wrap {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* WORDPRESS DEFAULTS */
+
+#wpfooter,
+.notice {
+    display: none;
+}
+
+/* FUNCTIONAL CLASSES */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.flex-column>*,
+.flex-row>* {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    animation: alert 3s 5;
+}
+
+.success {
+    animation: success 3s 1;
+}
+
+.previous {
+    background-color: rgba(255, 176, 49, 0.4) !important;
+}
+
+.selected {
+    background-color: rgba(0, 115, 170, 0.4) !important;
+}
+
+.selected-second-level {
+    background-color: rgba(0, 115, 170, 0.15) !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+/* WIZARD */
+.wizard-tabs {
+    width: 100%;
+    background-color: #23282d;
+    margin: 0;
+}
+
+.wizard-tabs>.wizard-tab-item {
+    width: calc(100% - 5rem);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.wizard-tabs>.wizard-tab-item a {
+    color: white;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #32373c;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wizard-tabs>.wizard-tab-item a.active {
+    cursor: default;
+}
+
+
+@media only screen and (min-width:768px) {
+    .wizard-tabs>.wizard-tab-item {
+        width: initial;
+    }
+
+    .wizard-tabs>.wizard-tab-item a {
+        width: initial;
+        clip-path: polygon(0 0, 1em 50%, 0 100%, calc(100% - 1em) 100%, 100% 50%, calc(100% - 1em) 0%);
+    }
+
+
+    .wizard-tabs>.wizard-tab-item:first-of-type>a {
+        clip-path: polygon(0 0, 0 100%, 90% 100%, 100% 50%, 90% 0%);
+    }
+
+    .wizard-tabs>.wizard-tab-item:last-of-type>a {
+        padding-right: 4.5rem;
+        clip-path: polygon(0 0, 1rem 50%, 0 100%, 100% 100%, calc(100% - 3rem) 0%);
+    }
+}
+
+.wizard-tabs>.wizard-tab-item>a.disabled {
+    cursor: default;
+    background-color: inherit;
+    color: rgba(240, 245, 250, .7);
+}
+
+.wizard-tabs>.wizard-tab-item a.active {
+    background-color: #0073aa;
+    color: white;
+}
+
+.wizard-section {
+    background-color: #F9f9f9;
+    padding: 0;
+}
+
+@media only screen and (min-width:768px) {
+    .wizard-section {
+        padding: 0.5rem;
+    }
+}
+
+.wizard-section>div {
+    margin: 0.5em;
+}
+
+.wizard-section>*>* {
+    padding: 0.5em;
+}
+
+/* GENERAL */
+.wizard-section hr {
+    margin: 2rem 0.5rem;
+}
+
+.wizard-section input,
+.wizard-section select,
+.wizard-section textarea {
+    border: 1px solid #AAA;
+    border-radius: 0;
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.wizard-section input[type=radio],
+.wizard-section input[type=checkbox] {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media only screen and (min-width:768px) {
+
+    .wizard-section input[type=radio],
+    .wizard-section input[type=checkbox] {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+.wizard-section input[type=radio] {
+    border-radius: 50%;
+}
+
+.wizard-section textarea {
+    min-height: 15rem;
+}
+
+.wizard-section input[type='button'] {
+    cursor: pointer;
+    padding: 0.8rem;
+}
+
+.wizard-section .primary {
+    background-color: #0073aa;
+    font-weight: bolder;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
+}
+
+.wizard-section .secondary {
+    background-color: hsl(26, 70%, 50%);
+    ;
+    font-weight: bolder;
+    color: white;
+}
+
+.wizard-section input[type='button']:disabled {
+    background-color: initial;
+    color: grey;
+    border: initial;
+    font-weight: initial;
+    cursor: default;
+}
+
+.list-select-item {
+    border: 1px solid #e7e7e7;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+p.section-description {
+    margin: 0;
+}
+
+/* WIZARD STEP 0 */
+
+#list-select-form {
+    max-height: initial;
+    overflow-y: auto;
+
+    padding-top: 0;
+    margin-top: 0;
+}
+
+@media only screen and (min-width:768px) {
+    #list-select-form {
+        max-height: calc(100vh - 15rem);
+        overflow-y: scroll;
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+.form-title {
+    font-weight: bold;
+}
+
+
+.form-id {
+    float: right;
+}
+
+.form-id::before {
+    content: 'Id: ';
+}
+
+.form-preview {
+    display: none;
+}
+
+@media only screen and (min-width:768px) {
+    .form-preview {
+        display: block;
+    }
+}
+
+.form-preview h1 {
+    padding: 0 0.3rem 0.3rem 0.3rem;
+    display: inline-block;
+    margin: 0;
+}
+
+.form-preview-id {
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 2;
+    float: right;
+}
+
+.form-preview-id::before {
+    content: 'Form Id: ';
+}
+
+
+/* WIZARD STEP 1 */
+.form-create-subscale {
+    padding: 0;
+    flex: 1 1 25rem;
+}
+
+.list-created-subscales-wrapper {
+    max-height: calc(100% - 18rem);
+    margin-top: 0;
+    overflow-y: auto;
+    flex: 3 1 25rem;
+}
+
+.list-created-subscales {
+    max-height: 10rem;
+}
+
+.form-create-subscale h1 {
+    margin: 0 0.5rem;
+}
+
+.input-label {
+    margin: 1rem 0.5rem 0rem 0;
+    font-weight: 600;
+}
+
+.subscale-name {
+    font-weight: 600;
+}
+
+.list-created-subscales.no-subscales {
+    text-align: center;
+}
+
+.list-created-subscales.no-subscales>h2 {
+    margin-top: calc(45vh - 13rem);
+
+}
+
+/* WIZARD STEP 2*/
+
+#wizard-section-2>div {
+    margin: 0;
+}
+
+.list-available-subscale-pages {
+    margin: 0;
+    padding: 0;
+}
+
+.list-available-subscale-pages li {
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+    width: max-content;
+    background-color: #f5f5f5;
+    border: thin solid #e7e7e7;
+    margin: 0.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.form-fields>li>div {
+    flex: 1 1 min-content;
+}
+
+#wizard-section-2 p.section-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#wizard-section-2 input.primary {
+    width: calc(100% - 1rem);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+.form-fields>li {
+    background-color: #f1f1f1;
+    border: thin solid #e7e7e7;
+    padding: 1rem;
+}
+
+.form-fields>li .current .likert-question {
+    font-weight: 600;
+}
+
+.form-fields>li:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.question-type-list {
+    list-style-type: disc;
+    margin: 1.3rem 2rem;
+}
+
+.field_id {
+    float: right;
+    font-weight: 200;
+}
+
+.field_id::before {
+    content: "Id: ";
+}
+
+.field-preview>div>div {
+    float: right;
+    min-width: min-content;
+    max-width: max-content;
+}
+
+.field-preview>div>* {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.field-preview>div {
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.field-preview.usable>div {
+    margin: 0 0 0 auto;
+}
+
+
+.field-preview div>ul {
+    list-style-type: disc;
+    margin: 1.3rem 1.5rem;
+}
+
+/* WIZARD STEP 3 */
+
+#wizard-section-3>div {
+    margin: 0;
+}
+
+#wizard-section-3 p.section-description {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#wizard-section-3 input.primary {
+    width: calc(100% - 1rem);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* WIZARD STEP 3 */
+.add-subscale-data-form {
+    background-color: #f1f1f1;
+    border: thin solid #AAA;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* FIELD PREVIEWS */
+td.likert-question {
+    width: 16rem;
+    padding: 0.3rem 1rem;
+}
+
+.survey_likert-type>table>tbody>tr.current {
+    background-color: rgb(92 180 223 / 10%);
+    font-weight: bold;
+    color: #666666;
+    outline: 3px solid steelblue;
+    border: 1px solid black
+}
+
+.new_form_button li a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: #0073aa;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 0;
+}

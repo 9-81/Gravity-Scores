@@ -1,0 +1,280 @@
+#wpcontent {
+    padding: 0;
+}
+
+.wrap,
+.evaluations {
+    margin: 0 !important;
+    padding: 0
+}
+
+ul.title-row {
+    margin: 0;
+    background-color: #23282d;
+}
+
+ul.title-row li {
+    color: rgba(240, 245, 250, .7);
+    ;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 0 0.2rem 0 0;
+}
+
+ul.title-row li.available {
+    color: white;
+    background-color: #32373c;
+    cursor: pointer;
+}
+
+ul.title-row li.active {
+    color: white;
+    background-color: #0073aa;
+    cursor: default;
+}
+
+div.tab-section {
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 1.2rem;
+}
+
+div.tab-section.tableSection {
+    background-color: #F1F1F1;
+}
+
+div.tab-section td,
+div.tab-section th {
+    font-size: 1rem;
+}
+
+div.tab-section p {
+    font-size: 1.2rem;
+}
+
+#wpfooter,
+.notice {
+    display: none;
+}
+
+
+.copy-tooltip.success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: greenyellow;
+    padding: 0.1rem 2rem;
+    border: thin solid green;
+    border-radius: 0.5rem;
+}
+
+.copy-tooltip.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    padding: 0.1rem 2rem;
+    border: thin solid crimson;
+    border-radius: 0.5rem;
+}
+
+.copy-tooltip p {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.evaluation-edit-sections {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.evaluation-edit-sections li {
+    background-color: #f1f1f1;
+    padding: 1.3rem 3.5rem;
+    border: thin solid #DDD;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+
+.evaluation-edit-sections li:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.evaluation-edit-sections li:focus {
+    background-color: rgba(0, 115, 170, 0.4);
+    color: black;
+    font-weight: 700;
+    padding: 1.3rem 3.3rem;
+}
+
+#rename-evaluation-text,
+#rename-evaluation-button,
+#select-evaluation-visualization,
+#select-evaluation-visualization-button {
+    margin: 0 !important;
+    border: thin solid lightgray;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    border-radius: 0;
+    line-height: inherit;
+}
+
+#rename-evaluation-text,
+#select-evaluation-visualization {
+    margin-top: 0.2rem;
+    max-width: 90%;
+    width: 30rem;
+    padding: 0.7rem 1.3rem;
+}
+
+#rename-evaluation-button,
+#select-evaluation-visualization-button {
+    font-weight: 700;
+    background-color: hsl(26, 70%, 50%);
+    cursor: pointer;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: 1px solid black;
+}
+
+#rename-evaluation-button:hover #select-evaluation-visualization-button:hover {
+    background-color: hsl(26, 80%, 60%);
+}
+
+#rename-evaluation-button:disabled,
+#select-evaluation-visualization-button:disabled {
+    font-weight: 700;
+    background-color: lightgray;
+    cursor: pointer;
+    color: darkgray;
+    padding: 0.7rem 2rem;
+    border-color: darkgrey;
+}
+
+#add-more-tests-button {
+    font-weight: 700;
+    background-color: hsl(26, 70%, 50%);
+    cursor: pointer;
+    color: white;
+    padding: 0.7rem 2rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.back-button {
+    background-color: #0073aa;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0.7rem 1.3rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.sectionRename,
+.sectionVisualizations,
+.sectionSubscales {
+    background-color: white;
+    padding: 0.5rem 1.2rem 2rem 1.2rem;
+    margin: 0 !important;
+}
+
+.sectionOverview div,
+.sectionRename div,
+.sectionVisualizations div {
+    min-width: 30rem;
+    width: fit-content;
+}
+
+.testListButton {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border: thin solid #cccccc;
+    font-weight: 700;
+}
+
+.testListButtonAdd {
+    cursor: pointer;
+}
+
+
+.testListButton:hover {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: rgba(0, 115, 170, 0.4);
+    border: thin solid #777;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.selectTestOverlay {
+    background-color: steelblue;
+    z-index: 999;
+    margin-left: 1rem;
+    position: fixed;
+    display: inline-block;
+    min-width: fit-content;
+    min-height: fit-content;
+    max-height: 40rem;
+    clip-path: polygon(2rem 0, 0 2rem, 2rem 4rem, 2rem 100%, 100% 100%, 100% 0);
+    padding: 1px;
+    padding-bottom: 0;
+    margin: auto;
+    padding-left: 2.1rem;
+}
+
+
+.selectTestOverlay div {
+    background-color: steelblue;
+    top: 0.1rem;
+    left: 0.1rem;
+    font-size: 1.3rem;
+    color: white;
+    max-height: 30rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.addableTest {
+    padding: 0.7rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.addableTest:nth-child(even) {
+    background-color: #0073aa;
+
+}
+
+.searchTests {
+    height: 4rem;
+    font-size: 1.2rem;
+    margin: 0;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #23282d;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+.new_evaluation_button a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: #0073aa;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 0;
+
+}
